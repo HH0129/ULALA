@@ -30,7 +30,7 @@ header {
   width: 100%;
   display: flex;
   align-items: center;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .logo {
@@ -51,7 +51,7 @@ header {
 }
 
 .navDesktop .menu li {
-  margin: 0 18px;
+  margin: 0 16px;
   padding: 10px;
 }
 
