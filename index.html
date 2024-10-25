@@ -9,16 +9,19 @@
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="ULALA.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="제이쿼리/jquery-3.7.1.min.js"></script>
+    <script src="script/swiper.js" defer></script>
+    <script src="script/jQuery.js" defer></script>
+    <script src="script/main.js"></script>
 </head>
 
 <body>
-  <!-- header -->
   <header>
+    <!-- 데스크탑 header -->
     <div class="navDesktop">
       <a class="logo" href="#"><img src="svg/logo.svg" alt="#"></a>
+      <!-- 데스크탑메뉴 -->
       <ul class="menu">
         <li><a href="#">전체</a></li>
         <li><a href="#">시즌</a></li>
@@ -33,15 +36,16 @@
       </a></div>
     </div>
 
+    <!-- 모바일 header -->
     <div class="navMobile">
       <a class="logo" href="#"><img src="svg/logo.svg" alt="#"></a>
-      <!-- 햄버거메뉴 -->
+      <!-- 햄버거 -->
       <div class="hamburger">
         <span></span>
         <span></span>
         <span></span>
       </div>
-
+      <!-- 모바일메뉴 -->
       <div class="menuWrap">
         <ul class="menu">
           <li><a href="#">전체</a></li>
@@ -51,11 +55,18 @@
           <li><a href="#">잡화</a></li>
           <li><a href="#">GIFT</a></li>
         </ul>
+        <!-- 모바일메뉴-버튼 -->
+        <div class="menuButton">
+          <div><a href="#">로그인</a></div>
+          <div><a href="#">회원가입</a></div>
+        </div>
+        <!-- 모바일메뉴-백그라운드이미지 -->
+        <div class="backgrondImg"><img src="svg/branch-menuWrap.svg" alt="#"></div>
       </div>
     </div>
   </header>
 
-  <!-- Swiper -->
+  <!-- 스와이퍼 -->
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide"><img src="img/banner/banner-1.png" alt="#"></div>
@@ -67,45 +78,11 @@
     <div class="swiper-pagination"></div>
   </div>
 
+  <!-- 스크롤 테스트용 \ -->
   <div class="test" style="width: 100%; height: 100vh; background-color: brown; "></div>
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var i = 0;
-
-    $(".hamburgur").click(function(){
-        $(".hamburgur span:nth-of-type(1)").toggleClass("active");
-        $(".hamburgur span:nth-of-type(2)").toggleClass("active");
-        $(".hamburgur span:nth-of-type(3)").toggleClass("active");
-
-        if (i == 0) {
-          $(".menuWrap").stop().animate({ "left": "0" });
-          i = 1;
-        } else {
-          $(".menuWrap").stop().animate({ "left": "-500px" });
-          i = 0;
-        }
-      });
-
-    var swiper = new Swiper(".mySwiper", {
-      centeredSlides: true,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
 </body>
 
 </html>
