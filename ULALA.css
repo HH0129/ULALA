@@ -1,37 +1,11 @@
+/* reseat */
+
 *{margin: 0; padding: 0; box-sizing: border-box; color: #fff;
 font-family: "Pretendard Variable"}
 a {text-decoration: none;}
 li {list-style: none;}
 
-header {
-    width: 100%;
-    padding: 40px 0;
-    position: fixed;
-    z-index: 9;
-}
-
-.nav {
-    width: 1600px;
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 18px;
-}
-
-.menu {
-    display: flex;
-}
-
-.menu li {
-    margin: 0 18px;
-    padding: 10px;
-}
-
-.myPage img {
-    margin-right: 1px;
-}
-
+/* swiper style */
 html,
 body {
     position: relative;
@@ -46,6 +20,43 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* header desktop */
+header {
+    width: 100%;
+    padding: 40px 0;
+    position: fixed;
+    z-index: 9;
+}
+
+.navDesktop {
+    width: 1600px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+
+.navMobile {
+    display: none; /* 모바일 네비 안보이게*/
+}
+
+.navDesktop .menu {
+    display: flex;
+}
+
+.navDesktop .menu li {
+    margin: 0 18px;
+    padding: 10px;
+}
+
+.navDesktop .myPage img {
+    margin-right: 1px;
+}
+
+
 
 .swiper {
     width: 100%;
@@ -81,4 +92,17 @@ body {
 .swiper-pagination {
     color: #fff;
     margin-bottom: 50px;
+}
+
+
+@media screen and (max-width:480px) {
+    .navDesktop {
+       display: none;
+    }
+
+    .navMobile {
+        display: block;
+    }
+
+    
 }
