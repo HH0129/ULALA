@@ -1,4 +1,4 @@
-// 배너 슬라이드
+// 배너 스와이퍼
 var swiper = new Swiper(".mySwiper", {
     centeredSlides: true,
     autoplay: {
@@ -14,3 +14,5 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+// 첫번째 컨테이너 스와이퍼
