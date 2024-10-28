@@ -15,12 +15,8 @@ var MainSwiper = new Swiper(".mainSwiper", {
     },
   });
 
-  var SubSwiper = new Swiper(".subSwiper",{
-
-  });
-
 // 첫번째 컨테이너 스와이퍼
-var SubSwiper = new wiper(".subSwiper", {
+var SubSwiper = new Swiper(".subSwiper", {
   slidesPerView: 1.3, //모바일
   spaceBetween: 20,
   navigation: {
@@ -33,8 +29,8 @@ var SubSwiper = new wiper(".subSwiper", {
           spaceBetween: 20,
       },
       1280: {
-          slidesPerView: 5.3, //웹
-          slidesPerGroup:5.3,
+          slidesPerView: 6.1, //웹
+          slidesPerGroup:6.3,
           spaceBetween: 20,
       },  
   },
