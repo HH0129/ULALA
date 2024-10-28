@@ -1,5 +1,5 @@
 // 배너 스와이퍼
-var swiper = new Swiper(".mySwiper", {
+var MainSwiper = new Swiper(".mainSwiper", {
     centeredSlides: true,
     autoplay: {
       delay: 5000,
@@ -15,4 +15,7 @@ var swiper = new Swiper(".mySwiper", {
     },
   });
 
+  var SubSwiper = new Swiper(".subSwiper",{
+
+  });
 // 첫번째 컨테이너 스와이퍼
