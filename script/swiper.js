@@ -29,7 +29,7 @@ var SubSwiper = new Swiper(".first", {
           spaceBetween: 20,
       },
       1280: {
-          slidesPerView: 6.1, //웹
+          slidesPerView: 5.5, //웹
           slidesPerGroup: 5,
           spaceBetween: 20,
       },  
@@ -50,8 +50,8 @@ var SubSwiper = new Swiper(".second", {
           spaceBetween: 20,
       },
       1280: {
-          slidesPerView: 4.2, //웹
-          slidesPerGroup: 4,
+          slidesPerView: 3.8, //웹
+          slidesPerGroup: 5,
           spaceBetween: 20,
       },  
   },

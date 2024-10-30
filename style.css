@@ -101,7 +101,7 @@ header {
 .container-1 {
   margin: 0 auto;
   margin-top: 150px;
-  width: 88%;
+  width: 80%;
 }
 
 .container-titleWrap {
@@ -131,7 +131,7 @@ header {
 
 .swiper-slide {
   text-align: center;
-  /* background: whitesmoke; */
+  background: whitesmoke;
 }
 
 /* 스와이퍼 이미지 */
@@ -232,8 +232,8 @@ header {
 /* 스와이퍼 버튼 */
 .subSwiper .swiper-slide:nth-child(1) {
   background-color: #C10013;
-  width: 180px !important;
-  height: 270px;
+  width: 120px !important;
+  height: 260px;
 }
 
 .subSwiper .swiper-button-next {
@@ -250,15 +250,15 @@ header {
 
 .subSwiper .swiper-slide:nth-child(12) {
   background-color: #01423A;
-  width: 180px !important;
-  height: 270px;
+  width: 120px !important;
+  height: 260px;
 }
 
 /* 두번째 컨테이너 */
 .container-2 {
   margin: 0 auto;
   margin-top: 200px;
-  width: 88%;
+  width: 80%;
 }
 
 .boxWrap {
@@ -315,7 +315,7 @@ header {
   height: 100%;
   margin-top: 220px;
   margin-left: auto;
-  margin-right: 82px;
+  margin-right: 60px;
 }
 
 .container-2 .textWrap h2 {
@@ -350,23 +350,24 @@ header {
 .container-3 {
   margin: 0 auto;
   margin-top: 200px;
-  width: 88%;
+  width: 80%;
 }
 
 /* 세번째 컨테이너 스와이퍼 */
 .container-3 .swiper {
-  height: 642px;
+  height: 100%;
 }
 
 /* 스와이퍼 이미지 */
 .container-3 .swiper-slide .swiper-slideImg {
-  width: 387px;
-  height: 505px;
+  margin: 0 auto;
+  width: 306px;
+  height: 400px;
 }
 
 .container-3 .swiper-slide:nth-child(1) {
   width: 120px !important;
-  height: 505px;
+  height: 400px;
 }
 .container-3 .swiper-slide:nth-child(2) .swiper-slideImg {
   background: url(./img/slide/slide-2-01.png) no-repeat;
@@ -401,7 +402,7 @@ display: none;
 .container-3 .swiper-slide:nth-child(10) {
   background-color: #01423A;
   width: 120px !important;
-  height: 505px;
+  height: 400px;
 }
 
 
