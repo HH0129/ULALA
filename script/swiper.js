@@ -16,7 +16,7 @@ var MainSwiper = new Swiper(".mainSwiper", {
   });
 
 // 첫번째 컨테이너 스와이퍼
-var SubSwiper = new Swiper(".subSwiper", {
+var SubSwiper = new Swiper(".first", {
   slidesPerView: 1.3, //모바일
   spaceBetween: 20,
   navigation: {
@@ -30,7 +30,28 @@ var SubSwiper = new Swiper(".subSwiper", {
       },
       1280: {
           slidesPerView: 6.1, //웹
-          slidesPerGroup:6.3,
+          slidesPerGroup: 5,
+          spaceBetween: 20,
+      },  
+  },
+});
+
+// 세번째 컨테이너 스와이퍼
+var SubSwiper = new Swiper(".second", {
+  slidesPerView: 1.3, //모바일
+  spaceBetween: 20,
+  navigation: {
+      nextEl: ".subSwiper .swiper-button-next",
+      prevEl: ".subSwiper .swiper-button-prev",
+  },
+  breakpoints: {
+      768: {
+          slidesPerView: 2.3, //태블릿
+          spaceBetween: 20,
+      },
+      1280: {
+          slidesPerView: 4.2, //웹
+          slidesPerGroup: 4.,
           spaceBetween: 20,
       },  
   },

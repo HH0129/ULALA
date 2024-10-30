@@ -4,10 +4,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #fff;
-  font-family: "Pretendard Variable";
+  font-family: "Pretendard";
 }
-a {text-decoration: none;}
+a {text-decoration: none; color: #fff;}
 li {list-style: none;}
 
 /* swiper style */
@@ -20,21 +19,20 @@ body {
 /* 헤더 데스크탑 */
 header {
   width: 100%;
-  padding: 60px 0;
+  padding: 55px 0;
   position: fixed;
-  z-index: 8;
+  z-index: 9;
 }
 
 .navDesktop {
   display: flex;
   align-items: center;
-  font-size: 18px;
-
+  font-size: 16px;
 }
 
 .logo {
   position: absolute;
-  left: 160px;
+  left: 100px;
 }
 
 .navDesktop .menu {
@@ -45,13 +43,13 @@ header {
 }
 
 .myPage {
-    position: absolute;
-    right: 160px;
+  position: absolute;
+  right: 100px;
 }
 
 .navDesktop .menu li {
   margin: 0 16px;
-  padding: 10px;
+  padding: 15px;
 }
 
 .navDesktop .myPage img {
@@ -100,10 +98,10 @@ header {
 }
 
 /* 첫번째 컨테이너 */
-.conainer-1 {
+.container-1 {
   margin: 0 auto;
-  margin-top: 100px;
-  width: 94%;
+  margin-top: 150px;
+  width: 88%;
 }
 
 .container-titleWrap {
@@ -112,7 +110,7 @@ header {
 
 .container-title {
   color: #000;
-  font-size: 32px;
+  font-size: 30px;
   font-weight:500;
   font-family: "Montserrat", serif;
 }
@@ -120,43 +118,305 @@ header {
 .container-supTitle {
   margin-top: 5px;
   color: #C10013;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   font-family: "Montserrat", serif;
 }
 
 /* 첫번째 컨테이너 스와이퍼 */
 .swiper:nth-of-type(2) {
-  margin-top: 44px;
-  height: 425px;
+  margin-top: 80px;
+  height: 100%;
 }
 
-.subSwiper .swiper-slide {
+.swiper-slide {
   text-align: center;
-  background: gray;
+  /* background: whitesmoke; */
+}
+
+/* 스와이퍼 이미지 */
+.subSwiper .swiper-slide .swiper-slideImg {
+  height: 260px;
+  width: 260px;
+}
+
+.subSwiper .swiper-slide:nth-child(2) .swiper-slideImg {
+  background: url(./img/slide/slide-1-01.png) no-repeat;
+}
+.subSwiper .swiper-slide:nth-child(3) .swiper-slideImg {
+  background: url(./img/slide/slide-1-02.png) no-repeat;
+}
+.subSwiper .swiper-slide:nth-child(4) .swiper-slideImg {
+  background: url(./img/slide/slide-1-03.png) no-repeat;
+}
+.subSwiper .swiper-slide:nth-child(5) .swiper-slideImg {
+  background: url(./img/slide/slide-1-04.png) no-repeat;
+}
+.subSwiper .swiper-slide:nth-child(6) .swiper-slideImg {
+  background: url(./img/slide/slide-1-05.png) no-repeat;
+}
+.subSwiper .swiper-slide:nth-child(7) .swiper-slideImg {
+  background: url(./img/slide/slide-1-06.png) no-repeat;
+}
+.subSwiper .swiper-slide:nth-child(8) .swiper-slideImg {
+  background: url(./img/slide/slide-1-07.png) no-repeat;
+}
+.subSwiper .swiper-slide:nth-child(9) .swiper-slideImg {
+  background: url(./img/slide/slide-1-08.png) no-repeat;
+}
+.subSwiper .swiper-slide:nth-child(10) .swiper-slideImg {
+  background: url(./img/slide/slide-1-09.png) no-repeat;
+}
+.subSwiper .swiper-slide:nth-child(11) .swiper-slideImg {
+  background: url(./img/slide/slide-1-10.png) no-repeat;
+}
+
+/* 스와이퍼 텍스트 */
+.subSwiper .swiper-slideText {
+  margin-top: 30px;
+}
+
+.subSwiper .cop {
+  color: #b1b1b1;
+  font-family: "Montserrat", serif;
+  font-size: 14px;
+}
+
+.subSwiper .name {
+  margin-top: 6px;
+  font-size: 18px;
+}
+
+.subSwiper .price {
+  margin-top: 13px;
+  font-size: 15px;
+}
+
+.subSwiper .price span:first-child {
+  margin-right: 4px;
+  color: #b1b1b1;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.subSwiper .price span:last-child {
+  margin-left: 3px;
+  color: #C10013
+}
+
+/* 스와이퍼 미니박스 */
+.subSwiper .miniboxWrap {
+  margin-top: 14px;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-
-.subSwiper .swiper-wrapper div:nth-child(1) {
-  background-color: #C10013;
-  width: 200px !important;
-}
-
-.swiper-button-next {
   color: #fff;
+}
+
+.subSwiper .minibox {
+  background-color: #01423A;
+  font-family: "Montserrat", serif;
+  font-size: 10px;
+  width: 48px;
+  padding: 2px;
+}
+/* 두번째 스와이퍼 미니박스 */
+.container-3 .minibox {
+  width: 60px;
+}
+
+.subSwiper .minibox:nth-child(2) {
+  margin-left: 5px;
+  background-color: #C10013;
+}
+
+/* 스와이퍼 버튼 */
+.subSwiper .swiper-slide:nth-child(1) {
+  background-color: #C10013;
+  width: 180px !important;
+  height: 270px;
+}
+
+.subSwiper .swiper-button-next {
+  color: #fff;
+  top: 215px;
+  right: 35px;
 }
 
 .subSwiper .swiper-button-prev {
-  background-color: #01423A !important; 
+  color: #fff;
+  top: 215px;
+  left: 35px;
+}
+
+.subSwiper .swiper-slide:nth-child(12) {
+  background-color: #01423A;
+  width: 180px !important;
+  height: 270px;
+}
+
+/* 두번째 컨테이너 */
+.container-2 {
+  margin: 0 auto;
+  margin-top: 200px;
+  width: 88%;
+}
+
+.boxWrap {
+  margin-top: 80px;
+  display: flex;
+}
+
+.container-2 .boxWrap .box:nth-child(1) {
+  cursor: pointer;
+  position: relative;
+  width: 600px;
+  height: 680px;
+  background: url(./img/container/container-1.png) no-repeat center center;
+  background-size: 110%;
+  transition: all 0.2s;
+}
+
+.container-2 .boxWrap .box:nth-child(1):hover {
+  background-size: 130%;
+  filter: brightness(20%);
+}
+
+.container-2 .boxWrap .box:nth-child(2) {
+  cursor: pointer;
+  position: relative;
+  width: 450px;
+  height: 680px;
+  background: url(./img/container/container-2.png) no-repeat center center;
+  background-size: 110%;
+  margin-left: 20px;
+  transition: all 0.2s;
+}
+
+.container-2 .boxWrap .box:nth-child(2):hover {
+  background-size: 125%;
+  filter: brightness(20%);
+}
+
+.container-2 .boxWrap .box:nth-child(2):hover h1 {
+  filter: brightness(100%) !important;
+}
+
+.container-2 .boxWrap h1 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+  position: absolute;
+  bottom: 64px;
+  left: 50px;
+}
+
+.container-2 .textWrap {
+  text-align: right;
+  height: 100%;
+  margin-top: 220px;
+  margin-left: auto;
+  margin-right: 82px;
+}
+
+.container-2 .textWrap h2 {
+  font-size: 30px;
+}
+
+.container-2 .textWrap p {
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+.container-2 .button {
+  margin-top: 80px;
+  margin-left: auto;
+  cursor: pointer;
+  padding: 13px;
+  width: 60%;
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid black;
+  border-radius: 3px;
+  transition: all 0.2s;
+}
+
+.container-2 .button:hover {
+  background-color: #C10013;
+  border: 1px solid #C10013;
   color: #fff;
 }
 
-.subSwiper .swiper-wrapper div:nth-child(12) {
-  background-color: #01423A;
-  
+/* 세번째 컨테이너 */
+.container-3 {
+  margin: 0 auto;
+  margin-top: 200px;
+  width: 88%;
 }
+
+/* 세번째 컨테이너 스와이퍼 */
+.container-3 .swiper {
+  height: 642px;
+}
+
+/* 스와이퍼 이미지 */
+.container-3 .swiper-slide .swiper-slideImg {
+  width: 387px;
+  height: 505px;
+}
+
+.container-3 .swiper-slide:nth-child(1) {
+  background-color: #C10013;
+  height: 505px;
+}
+.container-3 .swiper-slide:nth-child(2) .swiper-slideImg {
+  background: url(./img/slide/slide-2-01.png) no-repeat;
+}
+.container-3 .swiper-slide:nth-child(3) .swiper-slideImg {
+  background: url(./img/slide/slide-2-02.png) no-repeat;
+}
+.container-3 .swiper-slide:nth-child(3) .minibox:nth-child(1) {
+display: none;
+}
+.container-3 .swiper-slide:nth-child(4) .swiper-slideImg {
+  background: url(./img/slide/slide-2-03.png) no-repeat;
+}
+.container-3 .swiper-slide:nth-child(4) .minibox:nth-child(2) {
+  display: none;
+  }
+.container-3 .swiper-slide:nth-child(5) .swiper-slideImg {
+  background: url(./img/slide/slide-2-04.png) no-repeat;
+}
+.container-3 .swiper-slide:nth-child(6) .swiper-slideImg {
+  background: url(./img/slide/slide-2-05.png) no-repeat;
+}
+.container-3 .swiper-slide:nth-child(7) .swiper-slideImg {
+  background: url(./img/slide/slide-2-06.png) no-repeat;
+}
+.container-3 .swiper-slide:nth-child(8) .swiper-slideImg {
+  background: url(./img/slide/slide-2-07.png) no-repeat;
+}
+.container-3 .swiper-slide:nth-child(9) .swiper-slideImg {
+  background: url(./img/slide/slide-2-08.png) no-repeat;
+}
+.container-3 .swiper-slide:nth-child(10) {
+  background-color: #01423A;
+  width: 180px !important;
+  height: 505px;
+}
+
+
+
+
+
+
+
+/* 스크롤용 빈 공간 */
+.nobody {
+  height: 600px;
+}
+/* 스크롤용 빈 공간 */
+
+
 
 @media screen and (max-width: 480px) {
   .navDesktop {
