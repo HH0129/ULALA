@@ -51,7 +51,7 @@ var SubSwiper = new Swiper(".second", {
       },
       1280: {
           slidesPerView: 4.2, //웹
-          slidesPerGroup: 4.,
+          slidesPerGroup: 4,
           spaceBetween: 20,
       },  
   },

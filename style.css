@@ -365,7 +365,7 @@ header {
 }
 
 .container-3 .swiper-slide:nth-child(1) {
-  background-color: #C10013;
+  width: 120px !important;
   height: 505px;
 }
 .container-3 .swiper-slide:nth-child(2) .swiper-slideImg {
@@ -400,7 +400,7 @@ display: none;
 }
 .container-3 .swiper-slide:nth-child(10) {
   background-color: #01423A;
-  width: 180px !important;
+  width: 120px !important;
   height: 505px;
 }
 
