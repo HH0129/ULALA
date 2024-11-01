@@ -50,9 +50,28 @@ var SubSwiper = new Swiper(".second", {
           spaceBetween: 20,
       },
       1280: {
-          slidesPerView: 3.8, //웹
-          slidesPerGroup: 5,
-          spaceBetween: 20,
+          slidesPerView: 4.7, //웹
+          slidesPerGroup: 4,
       },  
+  },
+});
+
+// 네번째 컨테이너 스와이퍼
+var LastSwiper = new Swiper(".lastSwiper", {
+  slidesPerView: 1, //모바일
+  spaceBetween: 20,
+  loop: true,
+  pagination: {
+    el: ".lastSwiper .swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+        slidesPerView: 2.3, //태블릿
+        spaceBetween: 20,
+    },
+    1280: {
+        slidesPerView: 4, //웹
+    },  
   },
 });

@@ -23,50 +23,41 @@ header {
   position: fixed;
   z-index: 9;
 }
-
 .navDesktop {
   display: flex;
   align-items: center;
   font-size: 16px;
 }
-
 .logo {
   position: absolute;
   left: 100px;
 }
-
 .navDesktop .menu {
   display: flex;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
-
 .myPage {
   position: absolute;
   right: 100px;
 }
-
 .navDesktop .menu li {
   margin: 0 16px;
   padding: 15px;
 }
-
 .navDesktop .myPage img {
   margin-right: 1px;
 }
-
 .navMobile {
     display: none;
 }
 
 /* 배너 스와이퍼 */
-
 .swiper:nth-of-type(1) {
   width: 100%;
   height: 80%;
 }
-
 .mainSwiper .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -75,14 +66,12 @@ header {
   justify-content: center;
   align-items: center;
 }
-
 .mainSwiper .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 /* 스와이퍼 버튼 */
 .mainSwiper .swiper-button-next {
   color: #fff;
@@ -103,18 +92,15 @@ header {
   margin-top: 150px;
   width: 80%;
 }
-
 .container-titleWrap {
   text-align: center;
 }
-
 .container-title {
   color: #000;
   font-size: 30px;
   font-weight:500;
   font-family: "Montserrat", serif;
 }
-
 .container-supTitle {
   margin-top: 5px;
   color: #C10013;
@@ -122,24 +108,20 @@ header {
   font-weight: 600;
   font-family: "Montserrat", serif;
 }
-
 /* 첫번째 컨테이너 스와이퍼 */
 .swiper:nth-of-type(2) {
   margin-top: 80px;
   height: 100%;
 }
-
 .swiper-slide {
   text-align: center;
-  background: whitesmoke;
+  /* background: whitesmoke; */
 }
-
 /* 스와이퍼 이미지 */
 .subSwiper .swiper-slide .swiper-slideImg {
   height: 260px;
   width: 260px;
 }
-
 .subSwiper .swiper-slide:nth-child(2) .swiper-slideImg {
   background: url(./img/slide/slide-1-01.png) no-repeat;
 }
@@ -170,40 +152,33 @@ header {
 .subSwiper .swiper-slide:nth-child(11) .swiper-slideImg {
   background: url(./img/slide/slide-1-10.png) no-repeat;
 }
-
 /* 스와이퍼 텍스트 */
 .subSwiper .swiper-slideText {
   margin-top: 30px;
 }
-
-.subSwiper .cop {
+.subSwiper .company {
   color: #b1b1b1;
   font-family: "Montserrat", serif;
   font-size: 14px;
 }
-
 .subSwiper .name {
   margin-top: 6px;
   font-size: 18px;
 }
-
 .subSwiper .price {
   margin-top: 13px;
   font-size: 15px;
 }
-
 .subSwiper .price span:first-child {
   margin-right: 4px;
   color: #b1b1b1;
   font-size: 14px;
   text-decoration: line-through;
 }
-
 .subSwiper .price span:last-child {
   margin-left: 3px;
   color: #C10013
 }
-
 /* 스와이퍼 미니박스 */
 .subSwiper .miniboxWrap {
   margin-top: 14px;
@@ -211,61 +186,54 @@ header {
   justify-content: center;
   color: #fff;
 }
-
 .subSwiper .minibox {
   background-color: #01423A;
   font-family: "Montserrat", serif;
   font-size: 10px;
   width: 48px;
   padding: 2px;
+  margin: 0 2.5px;
 }
 /* 두번째 스와이퍼 미니박스 */
 .container-3 .minibox {
+  margin: 0 2.5px;
   width: 60px;
 }
-
 .subSwiper .minibox:nth-child(2) {
-  margin-left: 5px;
   background-color: #C10013;
 }
-
 /* 스와이퍼 버튼 */
 .subSwiper .swiper-slide:nth-child(1) {
   background-color: #C10013;
   width: 120px !important;
   height: 260px;
 }
-
 .subSwiper .swiper-button-next {
   color: #fff;
   top: 215px;
-  right: 35px;
+  right: 28px;
 }
-
 .subSwiper .swiper-button-prev {
   color: #fff;
   top: 215px;
-  left: 35px;
+  left: 28px;
 }
-
 .subSwiper .swiper-slide:nth-child(12) {
   background-color: #01423A;
-  width: 120px !important;
+  width: 306px !important;
   height: 260px;
 }
 
 /* 두번째 컨테이너 */
-.container-2 {
+.container {
   margin: 0 auto;
-  margin-top: 200px;
+  margin-top: 180px;
   width: 80%;
 }
-
 .boxWrap {
   margin-top: 80px;
   display: flex;
 }
-
 .container-2 .boxWrap .box:nth-child(1) {
   cursor: pointer;
   position: relative;
@@ -273,14 +241,12 @@ header {
   height: 680px;
   background: url(./img/container/container-1.png) no-repeat center center;
   background-size: 110%;
-  transition: all 0.2s;
+  transition: all 0.3s;
 }
-
 .container-2 .boxWrap .box:nth-child(1):hover {
-  background-size: 130%;
-  filter: brightness(20%);
+  background-size: 115%;
+  filter: brightness(50%);
 }
-
 .container-2 .boxWrap .box:nth-child(2) {
   cursor: pointer;
   position: relative;
@@ -291,16 +257,10 @@ header {
   margin-left: 20px;
   transition: all 0.2s;
 }
-
 .container-2 .boxWrap .box:nth-child(2):hover {
-  background-size: 125%;
-  filter: brightness(20%);
+  background-size: 115%;
+  filter: brightness(50%);
 }
-
-.container-2 .boxWrap .box:nth-child(2):hover h1 {
-  filter: brightness(100%) !important;
-}
-
 .container-2 .boxWrap h1 {
   color: #fff;
   font-size: 30px;
@@ -309,7 +269,6 @@ header {
   bottom: 64px;
   left: 50px;
 }
-
 .container-2 .textWrap {
   text-align: right;
   height: 100%;
@@ -317,16 +276,13 @@ header {
   margin-left: auto;
   margin-right: 60px;
 }
-
 .container-2 .textWrap h2 {
   font-size: 30px;
 }
-
 .container-2 .textWrap p {
   margin-top: 30px;
   font-size: 16px;
 }
-
 .container-2 .button {
   margin-top: 80px;
   margin-left: auto;
@@ -337,9 +293,8 @@ header {
   font-size: 14px;
   border: 1px solid black;
   border-radius: 3px;
-  transition: all 0.2s;
+  transition: all 0.3s;
 }
-
 .container-2 .button:hover {
   background-color: #C10013;
   border: 1px solid #C10013;
@@ -347,24 +302,16 @@ header {
 }
 
 /* 세번째 컨테이너 */
-.container-3 {
-  margin: 0 auto;
-  margin-top: 200px;
-  width: 80%;
-}
-
-/* 세번째 컨테이너 스와이퍼 */
+/* 스와이퍼 */
 .container-3 .swiper {
   height: 100%;
 }
-
 /* 스와이퍼 이미지 */
 .container-3 .swiper-slide .swiper-slideImg {
   margin: 0 auto;
   width: 306px;
   height: 400px;
 }
-
 .container-3 .swiper-slide:nth-child(1) {
   width: 120px !important;
   height: 400px;
@@ -401,14 +348,55 @@ display: none;
 }
 .container-3 .swiper-slide:nth-child(10) {
   background-color: #01423A;
-  width: 120px !important;
+  width: 500px !important;
   height: 400px;
 }
+/* 스와이퍼 버튼 */
+.container-3 .swiper-button-next {
+  top: 350px;
+  right: 28px;
+}
+.container-3 .swiper-button-prev {
+  top: 350px;
+  left: 28px;
+}
 
-
-
-
-
+/* 네번째 컨테이너 */
+.container-4 {
+  width: 100%;
+}
+.container-4 .container-title {
+  font-family: "Pretendard";
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 3%;
+  margin-bottom: 7px;
+}
+/* 스와이퍼 */
+.container-4 .swiper {
+  height: 260px;
+  background-color: aliceblue;
+}
+.container-4 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-4 .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* 스와이퍼 이미지 */
+.container-4 .swiper-slide .swiper-slideImg {
+  margin: 0 auto;
+  width: 306px;
+  height: 400px;
+}
 
 
 /* 스크롤용 빈 공간 */
@@ -429,14 +417,12 @@ display: none;
   .swiper-button-prev {
     display: none;
   }
-
   header {
     width: 100%;
     padding: 0px 0;
     position: fixed;
     z-index: 8;
   }
-
   .logo {
     position: absolute;
     top: 20px;
@@ -454,7 +440,6 @@ display: none;
     top: 20px;
     z-index: 9;
   }
-
   .hamburger span {
     display: block;
     width: 100%;
@@ -463,33 +448,26 @@ display: none;
     position: absolute;
     transition: all 0.2s;
   }
-
   .hamburger span:nth-of-type(1) {
     top: 0;
   }
-
   .hamburger span:nth-of-type(2) {
     top: 50%;
     transform: translateY(-50%);
   }
-
   .hamburger span:nth-of-type(3) {
     bottom: 0;
   }
-
   .hamburger span.active {
     background-color: #000;
   }
-
   .hamburger span:nth-of-type(1).active {
     top: 50%;
     transform: translateY(-50%) rotate(-45deg);
   }
-
   .hamburger span:nth-of-type(2).active {
     opacity: 0;
   }
-
   .hamburger span:nth-of-type(3).active {
     bottom: 50%;
     transform: translateY(50%) rotate(45deg);
@@ -499,13 +477,11 @@ display: none;
   .navMobile .logo {
     position: absolute;
   }
-
   .navMobile {
     display: block;
     width: 100%;
     height: 100vh;
   }
-
   .navMobile .menuWrap {
     background-color: #fff;
     border-radius: 30px 0 0 0;
@@ -514,46 +490,38 @@ display: none;
     position: absolute;
     right: -75%;
   }
-
   .navMobile .menuWrap .menu{
     margin-left: 30px;
     position: absolute;
     top:130px
   }
-
   .navMobile .menuWrap li {
     font-size: 24px;
     font-weight: 600;
     padding: 20px;
   }
-
   .navMobile .menuWrap a {
     color: black;
   }
-
   /* 모바일메뉴-버튼 */
   .menuButton {
     width: 75%;
     margin: 0 auto;
     margin-top: 690px;
   }
-
   .menuButton div {
     border: 1px solid black;
     border-radius: 3px;
     padding: 14px 0;
     text-align: center;
   }
-
   .menuButton div:nth-child(2) {
     margin-top: 10px;
     background-color: #000;
   }
-
   .menuButton div:nth-child(2) a {
     color: #fff;
   }
-
   /* 모바일메뉴-백그라운드이미지 */
   .backgrondImg {
     position: absolute;
