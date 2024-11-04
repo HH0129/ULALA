@@ -1,3 +1,20 @@
+//반응형 헤더
+$(function () {
+  $(window).scroll(function () {
+      var top = $(window).scrollTop();
+
+      if (top > 700) {
+          $('header').css({'background-color':'white','box-shadow':'0 3px 10px rgba(0,0,0,0.07)'});
+          $('header a').css({'color':'black'});
+          $('header a').css({'color':'black'});
+      } else {
+          $('header').css({'background-color':'unset','box-shadow':'none'});
+          $('header a').css({'color':'white'});
+      }
+  })
+})
+
+
 // 햄버거 메뉴
 var i = 0;
 $(".hamburger").click(function(){

@@ -22,6 +22,10 @@ header {
   padding: 50px 0;
   position: fixed;
   z-index: 9;
+  transition: all 0.5s ease-in-out;
+}
+header a {
+  transition: all 0.5s ease-in-out;
 }
 .navDesktop {
   display: flex;
@@ -29,7 +33,12 @@ header {
   font-size: 16px;
 }
 .navDesktop .logo {
+  cursor: pointer;
+  width: 110px;
+  height: 26px;
+  background: url(./svg/logo.svg) no-repeat;
   position: absolute;
+  top: 40px;
   left: 100px;
 }
 .navDesktop .menu {
@@ -45,6 +54,9 @@ header {
 .navDesktop .menu li {
   margin: 0 16px;
   padding: 10px;
+}
+.navDesktop .menu li:hover {
+  font-weight: bold;
 }
 .navDesktop .myPage img {
   margin-right: 1px;
@@ -74,21 +86,16 @@ header {
 }
 /* 스와이퍼 버튼 */
 .mainSwiper .swiper-button-next {
-  color: #fff;
   margin-right: 86px;
   opacity: 50%;
 }
 .mainSwiper .swiper-button-prev {
-  color: #fff;
   margin-left: 86px;
   opacity: 50%;
 }
 .mainSwiper .swiper-pagination {
   position: absolute;
   margin-bottom: 20px;
-}
-.mainSwiper .swiper-paginationr-bullet {
-  background-color: #fff !important;
 }
 
 /* 첫번째 컨테이너 */
