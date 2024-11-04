@@ -44,7 +44,7 @@ header {
 }
 .navDesktop .menu li {
   margin: 0 16px;
-  padding: 15px;
+  padding: 10px;
 }
 .navDesktop .myPage img {
   margin-right: 1px;
@@ -81,10 +81,7 @@ header {
   color: #fff;
   margin-left: 86px;
 }
-.mainSwiper .swiper-pagination {
-  color: #fff;
-  margin-bottom: 50px;
-}
+
 
 /* 첫번째 컨테이너 */
 .container-1 {
@@ -111,7 +108,6 @@ header {
 /* 첫번째 컨테이너 스와이퍼 */
 .swiper:nth-of-type(2) {
   margin-top: 80px;
-  height: 100%;
 }
 .swiper-slide {
   text-align: center;
@@ -227,13 +223,14 @@ header {
 /* 두번째 컨테이너 */
 .container {
   margin: 0 auto;
-  margin-top: 180px;
+  margin-top: 200px;
   width: 80%;
 }
 .boxWrap {
-  margin-top: 80px;
+  margin-top: 100px;
   display: flex;
 }
+/* 박스 이미지 */
 .container-2 .boxWrap .box:nth-child(1) {
   cursor: pointer;
   position: relative;
@@ -269,6 +266,7 @@ header {
   bottom: 64px;
   left: 50px;
 }
+/* 박스 텍스트 */
 .container-2 .textWrap {
   text-align: right;
   height: 100%;
@@ -295,7 +293,7 @@ header {
   border-radius: 3px;
   transition: all 0.3s;
 }
-.container-2 .button:hover {
+.button:hover {
   background-color: #C10013;
   border: 1px solid #C10013;
   color: #fff;
@@ -363,6 +361,7 @@ display: none;
 
 /* 네번째 컨테이너 */
 .container-4 {
+  background-color: aliceblue;
   width: 100%;
 }
 .container-4 .container-title {
@@ -374,37 +373,107 @@ display: none;
 }
 /* 스와이퍼 */
 .container-4 .swiper {
-  height: 260px;
-  background-color: aliceblue;
+  width: 100%;
+  height: 380px;
 }
 .container-4 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #eee;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
-.container-4 .swiper-slide img {
+.container-4 .swiper-slide .swiper-slideImg {
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 144px;
 }
-/* 스와이퍼 이미지 */
-.container-4 .swiper-slide .swiper-slideImg {
+.container-4 .swiper-slide:nth-child(1) .swiper-slideImg {
+  background: url(./img/slide/slide-3-05.png) no-repeat;
+}
+.container-4 .swiper-slide:nth-child(2) .swiper-slideImg {
+  background: url(./img/slide/slide-3-01.png) no-repeat;
+}
+.container-4 .swiper-slide:nth-child(3) .swiper-slideImg {
+  background: url(./img/slide/slide-3-02.png) no-repeat;
+}
+.container-4 .swiper-slide:nth-child(4) .swiper-slideImg {
+  background: url(./img/slide/slide-3-03.png) no-repeat;
+}
+.container-4 .swiper-slide:nth-child(5) .swiper-slideImg {
+  background: url(./img/slide/slide-3-04.png) no-repeat;
+}
+.container-4 .swiper-slide:nth-child(6) .swiper-slideImg {
+  background: url(./img/slide/slide-3-06.png) no-repeat;
+}
+.container-4 .swiper-slide:nth-child(7) .swiper-slideImg {
+  background: url(./img/slide/slide-3-07.png) no-repeat;
+}
+/* 텍스트 */
+.container-4 .collectionKOR {
+  margin-top: 26px;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.container-4 .collectionENG {
+  font-size: 12px;
+  color: #b1b1b1;
+}
+/* 버튼 */
+.container-4 .button {
+  cursor: pointer;
   margin: 0 auto;
-  width: 306px;
-  height: 400px;
+  margin-top: 26px;
+  padding: 13px;
+  width: 35%;
+  font-size: 14px;
+  border: 1px solid black;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+.container-4 .button:hover {
+  background-color: #C10013;
+  border: 1px solid #C10013;
+  color: #fff;
+}
+/* 스크롤바 */
+.container-4 .swiper-scrollbar{
+  opacity: 50%;
+  width: 60%;
 }
 
-
-/* 스크롤용 빈 공간 */
-.nobody {
-  height: 600px;
+/* 푸터 배너 */
+.footerWrap {
+  background-color: azure;
+  width: 100%;
+  margin-top: 100px;
 }
-/* 스크롤용 빈 공간 */
-
+.footerWrap .banner {
+  width: 100%;
+  margin: 0 auto;
+}
+.footerWrap .bannerTitle {
+  height: 148px;
+  background: url(./img/banner/banner-footer-title.svg) no-repeat;
+}
+.footerWrap .bannerImg {
+  height: 380px;
+  background: url(./img/banner/banner-footer.png) no-repeat;
+  background-size: cover;
+}
+/* 푸터 */
+.footer {
+  height: 260px;
+  background: url(./img/banner/footer.png) no-repeat;
+  background-size: cover;
+  padding: 50px 190px;
+}
+.footer .textWrap {
+  background-color: #b1b1b1;
+}
+.footer .logo {
+  width: 103px;
+  height: 22px;
+  background: url(./svg/logo.svg) no-repeat;
+  background-color: #C10013;
+}
 
 
 @media screen and (max-width: 480px) {
