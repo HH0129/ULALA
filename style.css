@@ -19,7 +19,7 @@ body {
 /* 헤더 데스크탑 */
 header {
   width: 100%;
-  padding: 55px 0;
+  padding: 50px 0;
   position: fixed;
   z-index: 9;
 }
@@ -28,7 +28,7 @@ header {
   align-items: center;
   font-size: 16px;
 }
-.logo {
+.navDesktop .logo {
   position: absolute;
   left: 100px;
 }
@@ -57,11 +57,11 @@ header {
 .swiper:nth-of-type(1) {
   width: 100%;
   height: 80%;
+  position: relative;
 }
 .mainSwiper .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,12 +76,20 @@ header {
 .mainSwiper .swiper-button-next {
   color: #fff;
   margin-right: 86px;
+  opacity: 50%;
 }
 .mainSwiper .swiper-button-prev {
   color: #fff;
   margin-left: 86px;
+  opacity: 50%;
 }
-
+.mainSwiper .swiper-pagination {
+  position: absolute;
+  margin-bottom: 20px;
+}
+.mainSwiper .swiper-paginationr-bullet {
+  background-color: #fff !important;
+}
 
 /* 첫번째 컨테이너 */
 .container-1 {
@@ -95,7 +103,7 @@ header {
 .container-title {
   color: #000;
   font-size: 30px;
-  font-weight:500;
+  font-weight: 600;
   font-family: "Montserrat", serif;
 }
 .container-supTitle {
@@ -205,12 +213,10 @@ header {
   height: 260px;
 }
 .subSwiper .swiper-button-next {
-  color: #fff;
   top: 215px;
   right: 28px;
 }
 .subSwiper .swiper-button-prev {
-  color: #fff;
   top: 215px;
   left: 28px;
 }
@@ -361,7 +367,6 @@ display: none;
 
 /* 네번째 컨테이너 */
 .container-4 {
-  background-color: aliceblue;
   width: 100%;
 }
 .container-4 .container-title {
@@ -373,8 +378,8 @@ display: none;
 }
 /* 스와이퍼 */
 .container-4 .swiper {
-  width: 100%;
-  height: 380px;
+  position: relative;
+  height: 370px;
 }
 .container-4 .swiper-slide {
   justify-content: center;
@@ -385,25 +390,25 @@ display: none;
   width: 100%;
   height: 144px;
 }
-.container-4 .swiper-slide:nth-child(1) .swiper-slideImg {
+.container-4 .slideImg01 {
   background: url(./img/slide/slide-3-05.png) no-repeat;
 }
-.container-4 .swiper-slide:nth-child(2) .swiper-slideImg {
+.container-4 .slideImg02 {
   background: url(./img/slide/slide-3-01.png) no-repeat;
 }
-.container-4 .swiper-slide:nth-child(3) .swiper-slideImg {
+.container-4 .slideImg03 {
   background: url(./img/slide/slide-3-02.png) no-repeat;
 }
-.container-4 .swiper-slide:nth-child(4) .swiper-slideImg {
+.container-4 .slideImg04 {
   background: url(./img/slide/slide-3-03.png) no-repeat;
 }
-.container-4 .swiper-slide:nth-child(5) .swiper-slideImg {
+.container-4 .slideImg05 {
   background: url(./img/slide/slide-3-04.png) no-repeat;
 }
-.container-4 .swiper-slide:nth-child(6) .swiper-slideImg {
+.container-4 .slideImg06 {
   background: url(./img/slide/slide-3-06.png) no-repeat;
 }
-.container-4 .swiper-slide:nth-child(7) .swiper-slideImg {
+.container-4 .slideImg07 {
   background: url(./img/slide/slide-3-07.png) no-repeat;
 }
 /* 텍스트 */
@@ -435,23 +440,29 @@ display: none;
 }
 /* 스크롤바 */
 .container-4 .swiper-scrollbar{
-  opacity: 50%;
-  width: 60%;
+  width: 23%;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* 푸터 배너 */
 .footerWrap {
-  background-color: azure;
-  width: 100%;
   margin-top: 100px;
+  position: relative;
 }
 .footerWrap .banner {
-  width: 100%;
   margin: 0 auto;
 }
 .footerWrap .bannerTitle {
-  height: 148px;
   background: url(./img/banner/banner-footer-title.svg) no-repeat;
+  position: absolute;
+  width: 1180px;
+  height: 148px;
+  bottom: 580px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .footerWrap .bannerImg {
   height: 380px;
@@ -464,15 +475,46 @@ display: none;
   background: url(./img/banner/footer.png) no-repeat;
   background-size: cover;
   padding: 50px 190px;
-}
-.footer .textWrap {
-  background-color: #b1b1b1;
+  color: #fff;
 }
 .footer .logo {
   width: 103px;
   height: 22px;
   background: url(./svg/logo.svg) no-repeat;
-  background-color: #C10013;
+  margin-bottom: 14px;
+}
+.footer .법적필수정보 {
+  display: flex;
+  font-size: 11px;
+}
+.footer .법적필수정보 li {
+  margin-left: 5px;
+  font-weight: 300;
+}
+.footer .법적필수정보 li:nth-child(1) {
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 0;
+  margin-right: 10px;
+}
+.footer .sns{
+  margin: 15px 0;
+}
+.footer .sns i {
+  margin-right: 10px;
+}
+.footer .회사정보 {
+  font-size: 12px;
+  font-weight: 200;
+  line-height: 20px;
+}
+.footer .회사정보 li:nth-child(2) {
+  margin-bottom: 11px;
+}
+
+/* 스와이퍼 버튼색상 일괄 적용 */
+:root {
+  --swiper-theme-color: #fff
 }
 
 

@@ -9,8 +9,8 @@ var MainSwiper = new Swiper(".mainSwiper", {
       nextEl: ".mainSwiper .swiper-button-next",
       prevEl: ".mainSwiper .swiper-button-prev",
     },
-    scrollbar: {
-      el: ".swiper-scrollbar",
+    pagination: {
+      el: ".mainSwiper .swiper-pagination",
     },
   });
 
@@ -57,35 +57,15 @@ var SubSwiper = new Swiper(".second", {
   },
 });
 
-// // 네번째 컨테이너 스와이퍼
-// var LastSwiper = new Swiper(".lastSwiper", {
-//   slidesPerView: 1, //모바일
-//   centeredSlides: true,
-//   loop: true,
-//   spaceBetween: 20,
-//   grabCursor: true,
-//   scrollbar: {
-//     el: ".lastSwiper .swiper-scrollbar",
-//   },
-//   breakpoints: {
-//     768: {
-//         slidesPerView: 2.3, //태블릿
-//         spaceBetween: 20,
-//     },
-//     1280: {
-//         slidesPerView: 5, //웹
-//     },  
-//   },
-// });
-
 // 네번째 컨테이너 스와이퍼
 var LastSwiper = new Swiper(".lastSwiper", {
   slidesPerView: 5,
-  spaceBetween: 20,
+  slidesPerGroup: 1,
   spaceBetween: 20,
   loop: true,
-  grabCursor: true,
-  scrollbar: {
-    el: ".lastSwiper .swiper-scrollbar",
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+    centeredSlides: true,
   },
 });
