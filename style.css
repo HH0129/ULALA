@@ -521,8 +521,11 @@ display: none;
   --swiper-theme-color: #fff
 }
 
-
+/* 모바일 사이즈 */
 @media screen and (max-width: 480px) {
+  header {
+    background-color:transparent;
+  }
   .navDesktop {
     display: none;
   }
@@ -542,6 +545,26 @@ display: none;
     position: absolute;
     top: 20px;
     left: 30px;
+  }
+  
+  /* 컨테이너 스와이퍼 좌우 컬러 삭제 */
+  .container-1 .swiper-slide:nth-child(1) {
+    display: none;
+  }
+  .container-1 .swiper-slide:nth-child(12) {
+    display: none;
+  }
+  .container-3 .swiper-slide:nth-child(1) {
+    display: none;
+  }
+  .container-3 .swiper-slide:nth-child(10) {
+    display: none;
+  }
+
+  /* 푸터 */
+  .footerWrap .bannerTitle {
+    width: 100%;
+    background-size: cover;
   }
 
   /* 햄버거 버튼 */
