@@ -236,7 +236,7 @@ header {
   margin-top: 200px;
   width: 80%;
 }
-.boxWrap {
+.container-2 .boxWrap {
   margin-top: 100px;
   display: flex;
 }
@@ -325,34 +325,34 @@ header {
   height: 400px;
 }
 .container-3 .swiper-slide:nth-child(2) .swiper-slideImg {
-  background: url(./img/slide/slide-2-01.png) no-repeat;
+  background: url(./img/slide/slide-2-01.png) no-repeat center;
 }
 .container-3 .swiper-slide:nth-child(3) .swiper-slideImg {
-  background: url(./img/slide/slide-2-02.png) no-repeat;
+  background: url(./img/slide/slide-2-02.png) no-repeat center;
 }
 .container-3 .swiper-slide:nth-child(3) .minibox:nth-child(1) {
 display: none;
 }
 .container-3 .swiper-slide:nth-child(4) .swiper-slideImg {
-  background: url(./img/slide/slide-2-03.png) no-repeat;
+  background: url(./img/slide/slide-2-03.png) no-repeat center;
 }
 .container-3 .swiper-slide:nth-child(4) .minibox:nth-child(2) {
   display: none;
   }
 .container-3 .swiper-slide:nth-child(5) .swiper-slideImg {
-  background: url(./img/slide/slide-2-04.png) no-repeat;
+  background: url(./img/slide/slide-2-04.png) no-repeat center;
 }
 .container-3 .swiper-slide:nth-child(6) .swiper-slideImg {
-  background: url(./img/slide/slide-2-05.png) no-repeat;
+  background: url(./img/slide/slide-2-05.png) no-repeat center;
 }
 .container-3 .swiper-slide:nth-child(7) .swiper-slideImg {
-  background: url(./img/slide/slide-2-06.png) no-repeat;
+  background: url(./img/slide/slide-2-06.png) no-repeat center;
 }
 .container-3 .swiper-slide:nth-child(8) .swiper-slideImg {
-  background: url(./img/slide/slide-2-07.png) no-repeat;
+  background: url(./img/slide/slide-2-07.png) no-repeat center;
 }
 .container-3 .swiper-slide:nth-child(9) .swiper-slideImg {
-  background: url(./img/slide/slide-2-08.png) no-repeat;
+  background: url(./img/slide/slide-2-08.png) no-repeat center;
 }
 .container-3 .swiper-slide:nth-child(10) {
   background-color: #01423A;
@@ -395,25 +395,25 @@ display: none;
   height: 144px;
 }
 .container-4 .slideImg01 {
-  background: url(./img/slide/slide-3-05.png) no-repeat;
+  background: url(./img/slide/slide-3-05.png) no-repeat center;
 }
 .container-4 .slideImg02 {
-  background: url(./img/slide/slide-3-01.png) no-repeat;
+  background: url(./img/slide/slide-3-01.png) no-repeat center;
 }
 .container-4 .slideImg03 {
-  background: url(./img/slide/slide-3-02.png) no-repeat;
+  background: url(./img/slide/slide-3-02.png) no-repeat center;
 }
 .container-4 .slideImg04 {
-  background: url(./img/slide/slide-3-03.png) no-repeat;
+  background: url(./img/slide/slide-3-03.png) no-repeat center;
 }
 .container-4 .slideImg05 {
-  background: url(./img/slide/slide-3-04.png) no-repeat;
+  background: url(./img/slide/slide-3-04.png) no-repeat center;
 }
 .container-4 .slideImg06 {
-  background: url(./img/slide/slide-3-06.png) no-repeat;
+  background: url(./img/slide/slide-3-06.png) no-repeat center;
 }
 .container-4 .slideImg07 {
-  background: url(./img/slide/slide-3-07.png) no-repeat;
+  background: url(./img/slide/slide-3-07.png) no-repeat center;
 }
 /* 텍스트 */
 .container-4 .collectionKOR {
@@ -523,9 +523,6 @@ display: none;
 
 /* 모바일 사이즈 */
 @media screen and (max-width: 480px) {
-  header {
-    background-color:transparent;
-  }
   .navDesktop {
     display: none;
   }
@@ -545,6 +542,15 @@ display: none;
     position: absolute;
     top: 20px;
     left: 30px;
+  }
+
+  /* 두번째 컨테이너 */
+  .container-2 .boxWrap {
+    display: block;
+  }
+  .container-2 .textWrap {
+    text-align: center;
+    margin-top: 70px;
   }
   
   /* 컨테이너 스와이퍼 좌우 컬러 삭제 */
