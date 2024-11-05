@@ -24,9 +24,6 @@ header {
   z-index: 9;
   transition: all 0.5s ease-in-out;
 }
-header a {
-  transition: all 0.5s ease-in-out;
-}
 .navDesktop {
   display: flex;
   align-items: center;
@@ -62,7 +59,7 @@ header a {
   margin-right: 1px;
 }
 .navMobile {
-    display: none;
+  display: none;
 }
 
 /* 배너 스와이퍼 */

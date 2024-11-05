@@ -10,9 +10,9 @@ $(function () {
       } else {
           $('header').css({'background-color':'unset','box-shadow':'none'});
           $('header a').css({'color':'white'});
-      }
-  })
-})
+      };
+  });
+});
 
 
 // 햄버거 메뉴
