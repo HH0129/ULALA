@@ -76,5 +76,5 @@ var LastSwiper = new Swiper(".lastSwiper", {
         slidesPerGroup: 1,
         spaceBetween: 20,
     },  
-},
+  },
 });

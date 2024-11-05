@@ -112,15 +112,13 @@ header {
 }
 .container-supTitle {
   margin-top: 5px;
+  margin-bottom: 100px;
   color: #C10013;
   font-size: 12px;
   font-weight: 600;
   font-family: "Montserrat", serif;
 }
 /* 첫번째 컨테이너 스와이퍼 */
-.swiper:nth-of-type(2) {
-  margin-top: 80px;
-}
 .swiper-slide {
   text-align: center;
   /* background: whitesmoke; */
@@ -237,35 +235,34 @@ header {
   width: 80%;
 }
 .container-2 .boxWrap {
-  margin-top: 100px;
   display: flex;
 }
 /* 박스 이미지 */
+.container-2 .boxWrap .box {
+  height: 630px;
+  text-align: center;
+}
 .container-2 .boxWrap .box:nth-child(1) {
   cursor: pointer;
   position: relative;
   width: 600px;
-  height: 680px;
   background: url(./img/container/container-1.png) no-repeat center center;
-  background-size: 110%;
-  transition: all 0.3s;
+  background-size: cover;
 }
 .container-2 .boxWrap .box:nth-child(1):hover {
-  background-size: 115%;
+  background-size: 107%;
   filter: brightness(50%);
 }
 .container-2 .boxWrap .box:nth-child(2) {
   cursor: pointer;
   position: relative;
   width: 450px;
-  height: 680px;
   background: url(./img/container/container-2.png) no-repeat center center;
-  background-size: 110%;
+  background-size: cover;
   margin-left: 20px;
-  transition: all 0.2s;
 }
 .container-2 .boxWrap .box:nth-child(2):hover {
-  background-size: 115%;
+  background-size: 107%;
   filter: brightness(50%);
 }
 .container-2 .boxWrap h1 {
@@ -532,45 +529,12 @@ display: none;
   .swiper-button-prev {
     display: none;
   }
-  header {
-    width: 100%;
-    padding: 0px 0;
-    position: fixed;
-    z-index: 8;
-  }
   .logo {
-    position: absolute;
     top: 20px;
     left: 30px;
   }
-
-  /* 두번째 컨테이너 */
-  .container-2 .boxWrap {
-    display: block;
-  }
-  .container-2 .textWrap {
-    text-align: center;
-    margin-top: 70px;
-  }
-  
-  /* 컨테이너 스와이퍼 좌우 컬러 삭제 */
-  .container-1 .swiper-slide:nth-child(1) {
-    display: none;
-  }
-  .container-1 .swiper-slide:nth-child(12) {
-    display: none;
-  }
-  .container-3 .swiper-slide:nth-child(1) {
-    display: none;
-  }
-  .container-3 .swiper-slide:nth-child(10) {
-    display: none;
-  }
-
-  /* 푸터 */
-  .footerWrap .bannerTitle {
+  .container {
     width: 100%;
-    background-size: cover;
   }
 
   /* 햄버거 버튼 */
@@ -617,14 +581,12 @@ display: none;
     transform: translateY(50%) rotate(45deg);
   }
 
-  /* 모바일메뉴 */
+  /* 모바일 메뉴 */
   .navMobile .logo {
     position: absolute;
   }
   .navMobile {
     display: block;
-    width: 100%;
-    height: 100vh;
   }
   .navMobile .menuWrap {
     background-color: #fff;
@@ -647,7 +609,7 @@ display: none;
   .navMobile .menuWrap a {
     color: black;
   }
-  /* 모바일메뉴-버튼 */
+  /* 모바일 메뉴 버튼 */
   .menuButton {
     width: 75%;
     margin: 0 auto;
@@ -666,10 +628,89 @@ display: none;
   .menuButton div:nth-child(2) a {
     color: #fff;
   }
-  /* 모바일메뉴-백그라운드이미지 */
+  /* 모바일 메뉴 백그라운드이미지 */
   .backgrondImg {
     position: absolute;
     right: 0;
     bottom: 100px;
+  }
+  
+  /* 두번째 컨테이너 */
+  .container-2 .boxWrap {
+    display: block;
+  }
+  .container-2 .boxWrap .box:nth-child(1) {
+    width: 100%;
+    background-size: cover;
+  }
+  .container-2 .boxWrap .box:nth-child(2) {
+    width: 100%;
+    margin-left: 0;
+  }
+  .container-2 .boxWrap h1 {
+    position: static;
+    margin: 0 auto;
+  }
+  .container-2 .textWrap {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+  .container-2 .button {
+    margin: 80px auto;
+  }
+  
+  /* 컨테이너 스와이퍼 좌우 컬러 삭제 */
+  .container-1 .swiper-slide:nth-child(1) {
+    display: none;
+  }
+  .container-1 .swiper-slide:nth-child(12) {
+    display: none;
+  }
+  .container-3 .swiper-slide:nth-child(1) {
+    display: none;
+  }
+  .container-3 .swiper-slide:nth-child(10) {
+    display: none;
+  }
+
+  /* 푸터 */
+  .footerWrap .bannerTitle {
+    bottom: 300px;
+    background-size: contain;
+    width: 100%;
+    bottom: 247px;
+  }
+  .footer {
+    padding: 80px 20px;
+    position: relative;
+  }
+  .footerWrap .bannerImg {
+    height: 100px;
+  }
+  .footer .textWrap {
+    width: 80%;
+  }
+  .footer .logo {
+    position: absolute;
+    left: 20px;
+    top: 40px;
+  }
+  .footer .법적필수정보 {
+    font-size: 10px;
+  }
+  .footer .법적필수정보 li:nth-child(1) {
+    font-size: 11px;
+    margin-right: 6px;
+  }
+  .footer .sns{
+    margin: 15px 0;
+  }
+  .footer .sns i {
+    margin-right: 10px;
+  }
+  .footer .회사정보 {
+    font-size: 10px;
+    line-height: 15px;
   }
 }
