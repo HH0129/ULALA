@@ -17,7 +17,7 @@ var MainSwiper = new Swiper(".mainSwiper", {
 
 // 첫번째 컨테이너 스와이퍼
 var SubSwiper = new Swiper(".first", {
-  slidesPerView: 1, //모바일
+  slidesPerView: 1.4, //모바일
   grabCursor: true,
   navigation: {
       nextEl: ".subSwiper .swiper-button-next",
@@ -38,7 +38,7 @@ var SubSwiper = new Swiper(".first", {
 
 // 세번째 컨테이너 스와이퍼
 var SubSwiper = new Swiper(".second", {
-  slidesPerView: 1, //모바일
+  slidesPerView: 1.5, //모바일
   grabCursor: true,
   navigation: {
       nextEl: ".subSwiper .swiper-button-next",
@@ -60,6 +60,7 @@ var SubSwiper = new Swiper(".second", {
 // 네번째 컨테이너 스와이퍼
 var LastSwiper = new Swiper(".lastSwiper", {
   slidesPerView: 1,
+  grabCursor: true,
   loop: true,
   autoplay: {
     delay: 2500,
@@ -72,8 +73,7 @@ var LastSwiper = new Swiper(".lastSwiper", {
         spaceBetween: 20,
     },
     1280: {
-        slidesPerView: 5, //웹
-        slidesPerGroup: 1,
+        slidesPerView: 4, //웹
         spaceBetween: 20,
     },  
   },

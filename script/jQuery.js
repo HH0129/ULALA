@@ -1,17 +1,17 @@
-//반응형 헤더
-$(function () {
-  $(window).scroll(function () {
-      var top = $(window).scrollTop();
+// //반응형 헤더
+// $(function () {
+//   $(window).scroll(function () {
+//       var top = $(window).scrollTop();
 
-      if (top > 700) {
-          $('.desktop').css({'background-color':'white','box-shadow':'0 3px 10px rgba(0,0,0,0.07)'});
-          $('.desktop a').css({'color':'black'});
-      } else {
-          $('.desktop').css({'background-color':'unset','box-shadow':'none'});
-          $('.desktop a').css({'color':'white'});
-      };
-  });
-});
+//       if (top > 700) {
+//           $('.desktop').css({'background-color':'white','box-shadow':'0 3px 10px rgba(0,0,0,0.07)'});
+//           $('.desktop a').css({'color':'black'});
+//       } else {
+//           $('.desktop').css({'background-color':'unset','box-shadow':'none'});
+//           $('.desktop a').css({'color':'white'});
+//       };
+//   });
+// });
 
 // 햄버거 메뉴
 var i = 0;
